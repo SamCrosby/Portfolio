@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samantha Crosby</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="portfolio.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+
+<header class="sticky" id="header">
+  <div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+</header>
+
+<div id="about" style="height:100px;">
+  <!-- <p>blah de blah de blah de blah</p> -->
+</div>
+
+<!-- <div class="parent left grid-container grid-x"> -->
+<div id="skills" class="skills">
+  <!-- <div class="cell small-12"> -->
+  <div class="tab">
+    <button class="tablinks" onclick="openSkill(event, 'design')">Design<br> Skills</button>
+    <button class="tablinks" onclick="openSkill(event, 'development')">Development<br> Skills</button>
+    <button class="tablinks" onclick="openSkill(event, 'testing')">Testing<br> Skills</button>
+  </div>
+<!-- </div> -->
+
+  <div id="design" class="skill">
+    <p>Design Skills</p>
+  </div>
+
+  <div id="development" class="skill" style="display:none;">
+    <p>Development Skills</p>
+  </div>
+
+  <div id="testing" class="skill" style="display:none;">
+    <p>Testing Skills</p>
+  </div>
+
+</div>
+<!-- </div> -->
+
+<div id="projects" class="projects">
+  <h2 style="text-align:center;">Projects</h2>
+  <div class="parent left grid-container grid-x" style="max-width:800px;margin-left:auto;margin-right:auto;">
+
+    <div class="cell small-11">
+      <a href="#" class="projectlink">
+      <div class="project">
+        <h3>Spin The Moose</h3>
+      </div>
+    </a>
+  </div>
+
+    <div class="cell small-11">
+      <a href="#" class="projectlink">
+      <div class="project">
+        <h3>Rubyside</h3>
+
+      </div>
+    </a>
+    </div>
+
+    <div class="cell small-11">
+      <a href="#" class="projectlink">
+      <div class="project">
+        <h3>Connect Four</h3>
+      </div>
+    </a>
+    </div>
+
+  </div>
+</div>
+
+<div id="contact">
+
+</div>
+
+
+<footer>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/samantha-crosby-974496112/">
+      <img src="images/linkedin.png"></img>
+  </a>
+    <a href="https://github.com/SamCrosby">
+      <img src="images/github.png"></img>
+  </a>
+  <a href="#">
+    <img src="images/twitter.svg" class="twitter"></img>
+  </a>
+  </div>
+
+  <div class="copyright">
+    <p>&copy;Samantha Crosby 2018</p>
+  </div>
+</footer>
+
+</body>
+</html>

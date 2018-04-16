@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width:100%;
+}
+
+header {
+  text-align: center;
+  background-color: #D7BDDA;
+  padding:15px;
+  margin:0;
+  transition: top 0.2s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+header a {
+  color: black;
+  font-size: 16px;
+  border:3px solid transparent;
+  padding:5px;
+  text-decoration: none;
+}
+
+header a:hover {
+  padding:5px;
+  margin-left: 0;
+  /* margin-right: 5px; */
+  border:3px solid white;
+}
+
+
+
+header a:visited {
+  padding:5px;
+  margin-left: 0;
+  /* margin-right: 5px; */
+  border:3px solid white;
+}
+
+
+li {
+  display:inline;
+  padding-right: 30px;
+}
+
+.outer {
+  width:600px;
+}
+
+/* .skills {
+  text-align: center;
+} */
+
+/* .tab {
+  text-align: center;
+
+} */
+
+/* .tab:nth-child(1) {
+  margin-left: 30%;
+ } */
+
+ .skills {
+   background-color:#D7BDDA;
+   width:100%;
+ }
+
+ .skill {
+   text-align: center;
+ }
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab {
+  width:100%;
+  background-color: #D7BDDA;
+  text-align: center;
+}
+
+.tab:nth-child(1) {
+   margin-left: 37%;
+  }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #C1E2EC;
+  /* color: white; */
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #C1E2EC;
+    /* color: white; */
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.skill {
+  padding:100px;
+}
+
+footer {
+  position: absolute;
+  bottom: -30;
+  left: 0;
+  width:100%;
+}
+
+.copyright {
+  width:100%;
+  padding-top:2px;
+  padding-bottom:2px;
+  background-color: #D7BDDA;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+}
+
+.social {
+  height:70px;
+  background-color: #C1E2EC;
+
+}
+
+.project {
+  margin-top:10px;
+  text-align: center;
+  background-color:#D7BDDA;
+  color:black;
+  padding:20px;
+  height:200px;
+  width: 200px;
+  border-radius:25px;
+  margin-bottom:20px;
+  /* display: inline; */
+}
+
+.projects {
+  /* height:600px; */
+}
+
+ .project:hover{
+  background-color: #C1E2EC;
+}
+
+footer a {
+  padding-right:15px;
+  text-decoration: none;
+  position: relative;
+  left:calc(46%);
+  top:calc(30%);
+}
+
+.twitter {
+  height:40px;
+  width:40px;
+}
