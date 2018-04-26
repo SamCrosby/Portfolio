@@ -8,54 +8,89 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="parent grid-container grid-x">
-      <div class="cell small-11">
-        <img class="logo" src="rubyside.svg" alt="Rubyside Logo">
+    <header>
+      <!-- <div> -->
+        <div class="parent grid-container grid-x">
+        <!-- <div class="cell small-11"> -->
+          <img style="max-width:300px;" class="logo" src="rubyside.svg" alt="Rubyside Logo">
+        <!-- </div> -->
+        <!-- </div> -->
+        <div class="parent grid-container">
+          <div class="cell small-hidden">
+            <ul>
+              <div class="topnav" id="myTopnav">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#rubyside">What is Rubyside?</a></li>
+                <li><a href="#event">Events</a></li>
+                <li><a href="#organisers">Organisers</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
       </div>
-  </div>
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">What is Rubyside?</a></li>
-    <li><a href="#contact">Events</a></li>
-    <li><a href="#about">Organisers</a></li>
-  </ul>
+    </header>
 
-
+<button class="bounce" onclick="window.location.href='#'" id="top">&Hat;</button>
 <div class="parent grid-container grid-x">
   <div class="cell small-11">
-    <h3 id="rubyside" style="height:20px;text-align:center;">What is Rubyside?</h3>
+    <h3 id="rubyside" style="padding-top:50px;text-align:center;">What is Rubyside?</h3>
+    <p>Rubyside is an interest group for Ruby and Ruby on Rails Enthusiasts in Liverpool, Merseyside and the surrounding areas.</p>
   </div>
 </div>
 
 <div class="parent grid-container grid-x">
   <div class="cell small-11">
-    <h3 id="event" style="height:20px;text-align:center;">Next Event</h3>
+    <h3 id="event" style="padding-top:60px;text-align:center;">Next Event</h3>
+    <p>Rubyside #9 Wednesday 19th April 2017 | 6pm - 8pm
+    <br>
+    Lightning Talks
+    <br>
+    <br>
+    Come and share your knowlege and learn from others at Rubyside's first ever lightning talk session! Venue to be confirmed!</p>
+
+    <button class="button">Register!</button>
+
   </div>
 </div>
 
 <div class="parent grid-container grid-x">
   <div class="cell small-11">
-    <h3 id="organisers" style="height:20px;text-align:center;">Organisers</h3>
+    <h3 id="organisers" style="padding-top:50px;text-align:center;">Organisers</h3>
   </div>
 </div>
 
+<div class="parent grid-container grid-x">
 <div class="organisers">
+<div class="test">
+  <div class="clip">
+    <div class="cell small-12">
+    <img src="daniel2.png">
+    </img>
+  </div>
+</div>
+
 
   <div class="clip">
-  <img src="daniel2.png">
-  </img>
+    <div class="cell small-12">
+    <img src="mike2.png">
+    </img>
+  </div>
 </div>
 
-<div class="clip">
-  <img src="mike2.png">
-  </img>
+
+  <div class="clip">
+    <div class="cell small-12">
+    <img src="tom.png">
+    </img>
+  </div>
 </div>
 
-<div class="clip">
-  <img src="tom.png">
-  </img>
 </div>
 </div>
+</div>
+
+
 
 <div class="push"></div>
 </div>
@@ -64,15 +99,20 @@
   <img class="cleversteam" src="CleverSteam.png"></img>
 </div>
 <div class="parent left grid-container grid-x">
-  <div class="cell small-6">
+<!-- <div> -->
+<div class="cell small-6">
+
+<div class="icons">
     <a href="#">
-      <h3>Slack</h3>
+      <img class="slack" src="SlackWhite.svg"></img>
     </a>
   </div>
-  <div class="right">
+</div>
+
   <div class="cell small-6">
+  <!-- <div> -->
     <a href="http://twitter.com/rubyside">
-      <h3>Twitter</h3>
+      <img class="twitter" src="Twitter.svg"></img>
     </a>
   </div>
 </div>

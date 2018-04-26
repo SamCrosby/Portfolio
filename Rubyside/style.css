@@ -1,19 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: sans-serif;
   height: 100%;
   margin: 0;
+  padding: 0;
   background-color:#FAE7E9;
+  line-height: 1.5;
 }
 
-/* body {
-} */
+p {
+  text-align: center;
+}
+
+header {
+  background-color:	#49AB98;
+  color: white;
+  height: 150px;
+}
+
+header li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  /* float: left; */
+}
+
+.headerlogo {
+  width:100px;
+}
 
 .logo {
   display:block;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* margin-top:15%; */
   width:300px;
+  padding-top: 30px;
+}
+
+.icon {
+  display: none;
 }
 
 ul {
@@ -21,10 +48,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #D1142F;
+    /* background-color: #D1142F; */
     width:90%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: -17px;
 }
 
 li {
@@ -33,37 +62,69 @@ li {
 
 li a {
     display: block;
-    color: white;
+    font-weight: bold;
+    color: #D1142F;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 14px;
     text-decoration: none;
     border: solid transparent;
+    font-size: 18px;
 }
 
 li a:hover {
-  background-color: white;
-  color: #D1142F;
   border-style: solid;
   border-color: #D1142F;
 }
 
+.bounce {
+  float:right;
+  position: fixed;
+  display:block;
+  border: none;
+  color:white;
+  font-size: 20px;
+  padding:10px 10px;
+  background-color: #D1142F;
+  cursor: pointer;
+}
+
+.button {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  color:white;
+  background-color: #D1142F;
+  padding:15px 30px;
+  font-size: 20px;
+  radius:5px;
+  cursor: pointer;
+}
+
+.button:hover {
+   box-shadow: 0 10px 14px 0 darkgrey,0 10px 30px 0 darkgrey;
+}
+
 .organisers {
   position:relative;
-  height:300px;
-  top:70px;
+  height:auto;
+  top:40px;
   /* left:calc(20%); */
   /* animation-name: move;
   animation-duration: 2s; */
   transition-property: top;
   transition-duration: 2s;
+  display:inline;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .organisers img {
-  display:inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  /* display:inline-block; */
+  /* margin-left: auto;
+  margin-right: auto; */
     /* left:calc(30%); */
-  position:relative;
+  /* position:relative; */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 50px;
@@ -74,6 +135,12 @@ li a:hover {
   to {top:-5px;}
 } */
 
+.test {
+  margin: auto;
+      width: 50%;
+      padding: 10px;
+}
+
 .clip:hover {
   top:-5px;
   /* transition-duration: 2s;
@@ -82,14 +149,6 @@ li a:hover {
 }
 
 
-/* .clip {
-
-
-  background: #D1142F;
-  box-sizing: border-box;
-  clip-path:polygon(82% 11%, 99% 39%, 64% 92%, 32% 34%, 49% 11%);
-} */
-
 .clip {
   display:inline-block;
   position: relative;
@@ -97,6 +156,7 @@ li a:hover {
   height: 150px;
   background-color: #D1142F;
   box-sizing: border-box;
+
   clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
 }
 
@@ -107,21 +167,6 @@ li a:hover {
     width: 116px;
     height: 117px;
     clip-path:polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%);
-}
-
-/* .clip:hover {
-  top:-5px;
-} */
-/*
-
-
-
-.wrapper {
-  min-height: 100%;
-
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
 }
 
 .footer,
@@ -135,10 +180,10 @@ footer {
     margin: 0;
     padding: 0;
     background-color: #D1142F;
-    width:90%;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
-    left:calc(5%);
+    /* left:calc(5%); */
 }
 
 .cleversteam {
@@ -154,4 +199,31 @@ footer a {
     text-align: center;
     text-decoration: none;
     border: solid transparent;
+}
+
+.icons {
+  display:inline;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 5px; */
+}
+
+.slack {
+  height:70px;
+  width:70px;
+  float: right;
+}
+
+.twitter {
+  height:35px;
+  width:35px;
+  float: left;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  background-color: black;
+
 }
