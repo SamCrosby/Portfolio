@@ -2,109 +2,162 @@
 <html>
 <head>
   <title>Samantha Crosby</title>
+  <!--This is the link to the styleshseet-->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--This is the link to the responsive styleshseet-->
   <link rel="stylesheet" type="text/css" href="responsive.css">
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <!--This is the link to the portfolio JaavScript file-->
   <script src="portfolio.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-
+<!--This is the header for the site-->
 <header class="sticky" id="header">
   <div>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <!--These are tthe navigation links-->
+      <li><a href="#" id="aboutlink" class="about">Home</a></li>
+      <li><a href="#skills" class="link">Skills</a></li>
+      <li><a href="#projects" class="link">Projects</a></li>
+      <li><a href="#contact" class="link">Contact</a></li>
     </ul>
   </div>
-
 </header>
-
-<div id="about" style="height:100px;">
-  <!-- <p>blah de blah de blah de blah</p> -->
-</div>
-
-<!-- <div class="parent left grid-container grid-x"> -->
-<div id="skills" class="skills">
-  <!-- <div class="cell small-12"> -->
+<!--This is the button that sends the user back to the top of the page-->
+  <button class="bounce" onclick="window.location.href='#'" id="top">&Hat;</button>
+<!-- This is the about me section, it includes my name and chosen job. -->
+  <div class="me" style="color:#044C62;">
+    <h1>Samantha Crosby</h1>
+    <h2>Front-End Web Developer</h2>
+  </div>
+  <!--This is the skills section-->
+  <div id="skills" class="skills" style="margin-top:60px;">
+    <!--This is the skills title-->
+    <h2 style="text-align:center;padding-bottom:15px;color:#044C62;">Skills</h2>
+    <!--This is the tab table that contains the skills-->
   <div class="tab">
-    <button class="tablinks" onclick="openSkill(event, 'design')">Design<br> Skills</button>
-    <button class="tablinks" onclick="openSkill(event, 'development')">Development<br> Skills</button>
-    <button class="tablinks" onclick="openSkill(event, 'testing')">Testing<br> Skills</button>
+    <div class="cell small-12">
+      <!--These are the individual tabs-->
+      <button class="tablinks" onclick="openSkill(event, 'design')" style="border-right:solid #044C62;">Design<br> Skills</button>
+      <button class="tablinks" onclick="openSkill(event, 'development')" style="border-right:solid #044C62;">Development<br> Skills</button>
+      <button class="tablinks" onclick="openSkill(event, 'testing')">Testing<br> Skills</button>
+    </div>
   </div>
-<!-- </div> -->
-
+  <!--This is the content for the design skills tab-->
   <div id="design" class="skill">
-    <p>Design Skills</p>
+    <ul>
+      <li>User Experience Design</li>
+      <li>Responsive Design</li>
+    </ul>
   </div>
-
+  <!--This is the content for the development skills tab-->
   <div id="development" class="skill" style="display:none;">
-    <p>Development Skills</p>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>SASS</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>Ember.js</li>
+      <li>Python</li>
+      <li>Laravel</li>
+      <li>Linux</li>
+    </ul>
   </div>
-
+  <!--This is the content for the design skills tab-->
   <div id="testing" class="skill" style="display:none;">
-    <p>Testing Skills</p>
+    <ul>
+      <li>Test-Driven Development</li>
+      <li>Behaviour-Driven Development</li>
+    </ul>
   </div>
-
 </div>
-<!-- </div> -->
 
+<!--This is the projects section-->
 <div id="projects" class="projects">
-  <h2 style="text-align:center;">Projects</h2>
-  <div class="parent left grid-container grid-x" style="max-width:800px;margin-left:auto;margin-right:auto;">
+  <!--This is the projects title-->
+  <h2 style="text-align:center;color:#044C62;">Projects</h2>
+  <!--This is the container grid for the projects-->
+  <div class="parent left grid-container grid-x" style="max-width:850px;margin-left:auto;margin-right:auto;">
+    <!--This is the link to the Spin the moose page-->
+    <a href="SpinTheMoose.html" class="projectlink">
+      <div class="projectBackground">
+        <div class="cell small-11">
+          <div class="project">
+            <!--This is the projects images-->
+            <img class="moose" src="Images/moose2.PNG"></img>
+          </div>
+          <!--This is the name of the project-->
+          <h3 class="projectName">Spin The Moose</h3>
+        </div>
+      </div>
+    </a>
 
-    <div class="cell small-11">
-      <a href="#" class="projectlink">
-      <div class="project">
-        <h3>Spin The Moose</h3>
+    <!--This is the rubyside project-->
+    <a href="Rubyside.html" class="projectlink">
+      <div class="projectBackground">
+        <div class="cell small-11">
+            <div class="project">
+              <!--This is the project image-->
+              <img class="rubyside" src="Images/rubyside.svg" style="max-width:230px;margin-left:10px;"></img>
+            </div>
+            <!--This is the project title-->
+            <h3 class="projectName" style="margin-top:90px;">Rubyside</h3>
+        </div>
+      </div>
+    </a>
+
+    <!--This is the framework project-->
+    <a href="Framework.html" class="projectlink">
+      <div class="projectBackground">
+        <div class="cell small-11">
+          <div class="project">
+            <!--This is the project image-->
+            <img class="framework" src="Images/favicon.png"></img>
+          </div>
+          <!--This is the project title-->
+          <h3 class="projectName" style="margin-top:10px;">Accessibility<br>Framework</h3>
+        </div>
       </div>
     </a>
   </div>
-
-    <div class="cell small-11">
-      <a href="#" class="projectlink">
-      <div class="project">
-        <h3>Rubyside</h3>
-
-      </div>
-    </a>
-    </div>
-
-    <div class="cell small-11">
-      <a href="#" class="projectlink">
-      <div class="project">
-        <h3>Connect Four</h3>
-      </div>
-    </a>
-    </div>
-
-  </div>
 </div>
 
-<div id="contact">
-
+<!--This is the contact section-->
+<div class="contact" id="contact">
+  <!--This is the email address-->
+  <p>SamanthaCrosby97@Outlook.com</p>
+  <!--This is the phone number-->
+  <p>07596428322</p>
+  <!--This is the location-->
+  <p>Based in St. Helens</p>
+  <!--This is the link to download the CV-->
+  <a href="https://stupefied-meitner-cb15ff.netlify.com/SamanthaCrosbyCV.docx"><p>Download CV</p></a>
 </div>
 
-
+<!--This is the footer section-->
 <footer>
+  <!--This is the social media section-->
   <div class="social">
+    <!--This is the link to linkedin-->
     <a href="https://www.linkedin.com/in/samantha-crosby-974496112/">
-      <img src="images/linkedin.png"></img>
-  </a>
+      <img src="images/linkedin2.png"></img>
+    </a>
+    <!--This is the link to github-->
     <a href="https://github.com/SamCrosby">
       <img src="images/github.png"></img>
-  </a>
-  <a href="#">
-    <img src="images/twitter.svg" class="twitter"></img>
-  </a>
+    </a>
+    <!--This is the link to twitter-->
+    <a href="#">
+      <img src="images/Twitter3.svg" class="twitter"></img>
+    </a>
   </div>
-
+  <!--This is the copyright-->
   <div class="copyright">
     <p>&copy;Samantha Crosby 2018</p>
   </div>
 </footer>
-
 </body>
 </html>

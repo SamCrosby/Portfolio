@@ -1,3 +1,5 @@
+
+
 function openSkill(evt, skillName) {
     var i, skill, tablinks;
     skill = document.getElementsByClassName("skill");
@@ -30,6 +32,3 @@ function openSkill(evt, skillName) {
   //     header.classList.remove("sticky");
   //   }
   // }
-
-
-  
