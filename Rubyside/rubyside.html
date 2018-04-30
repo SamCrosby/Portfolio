@@ -19,11 +19,11 @@
           <div class="cell small-hidden">
             <ul>
               <div class="topnav" id="myTopnav">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#rubyside">What is Rubyside?</a></li>
-                <li><a href="#event">Events</a></li>
-                <li><a href="#organisers">Organisers</a></li>
                 <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                <li><a href="#organisers">Organisers</a></li>
+                <li><a href="#event">Events</a></li>
+                <li><a href="#rubyside">What is Rubyside?</a></li>
+                <li><a class="active" href="#home">Home</a></li>
               </div>
             </ul>
           </div>
@@ -34,14 +34,14 @@
 <button class="bounce" onclick="window.location.href='#'" id="top">&Hat;</button>
 <div class="parent grid-container grid-x">
   <div class="cell small-11">
-    <h3 id="rubyside" style="padding-top:50px;text-align:center;">What is Rubyside?</h3>
+      <h3 class="title" id="rubyside">What is Rubyside?</h3>
     <p>Rubyside is an interest group for Ruby and Ruby on Rails Enthusiasts in Liverpool, Merseyside and the surrounding areas.</p>
   </div>
 </div>
 
 <div class="parent grid-container grid-x">
   <div class="cell small-11">
-    <h3 id="event" style="padding-top:60px;text-align:center;">Next Event</h3>
+    <h3 class="title" id="event">Next Event</h3>
     <p>Rubyside #9 Wednesday 19th April 2017 | 6pm - 8pm
     <br>
     Lightning Talks
@@ -49,14 +49,14 @@
     <br>
     Come and share your knowlege and learn from others at Rubyside's first ever lightning talk session! Venue to be confirmed!</p>
 
-    <button class="button">Register!</button>
+    <button class="button" onclick="window.location.href='https://www.eventbrite.co.uk'">Register!</button>
 
   </div>
 </div>
 
 <div class="parent grid-container grid-x">
   <div class="cell small-11">
-    <h3 id="organisers" style="padding-top:50px;text-align:center;">Organisers</h3>
+    <h3 class="title" id="organisers">Organisers</h3>
   </div>
 </div>
 
@@ -65,7 +65,16 @@
 <div class="test">
   <div class="clip">
     <div class="cell small-12">
-    <img src="daniel2.png">
+    <img src="daniel2.png" alt="Daniel Nicolson - Director, Cleversteam">
+    </img>
+  </div>
+</div>
+
+
+
+  <div class="clip">
+    <div class="cell small-12">
+    <img src="mike2.png" alt="Mike Hart - Technical Director, Cleversteam ">
     </img>
   </div>
 </div>
@@ -73,18 +82,18 @@
 
   <div class="clip">
     <div class="cell small-12">
-    <img src="mike2.png">
+    <img src="tom.png" alt="Tom Dracz - Developer, Cleversteam">
     </img>
   </div>
 </div>
 
-
-  <div class="clip">
-    <div class="cell small-12">
-    <img src="tom.png">
-    </img>
-  </div>
-</div>
+<!-- <div class="organiserNames">
+<ul>
+  <li>Daniel Nicolson</li>
+  <li>Mike Hart</li>
+  <li>Tom Dracz</li>
+</ul>
+</div> -->
 
 </div>
 </div>
@@ -96,7 +105,9 @@
 </div>
 <footer>
 <div>
+  <a href="https://www.cleversteam.com/uk">
   <img class="cleversteam" src="CleverSteam.png"></img>
+</a>
 </div>
 <div class="parent left grid-container grid-x">
 <!-- <div> -->
