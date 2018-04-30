@@ -88,42 +88,44 @@ This is the styling for the me class
   padding-top: 60px;
 }
 
+/*This is the styling for the rubyside class*/
 .rubyside {
   max-width: 250px;
 }
 
+/*This is the styling for the header list items*/
  header li {
   display:inline;
   padding-right: 30px;
   /* padding-top: 20px; */
 }
 
+/*
+This is the styling for the outer class
+*/
 .outer {
   width:600px;
 }
 
-
-
-/* .skills {
-  text-align: center;
-} */
-
-
-
-/* .tab:nth-child(1) {
-  margin-left: 30%;
- } */
-
+/*
+This is the styling for the skills class
+*/
  .skills {
    /* background-color:#D7BDDA; */
    width:100%;
  }
 
+ /*
+ This is the styling for the skill class
+ */
  .skill {
    text-align: center;
    /* background-color:#D7BDDA; */
  }
 
+ /*
+ This is the styling for the ul tag within the skill class
+ */
  .skill ul {
    list-style-type: none;
    columns: 2;
@@ -131,10 +133,14 @@ This is the styling for the me class
    -moz-columns: 2;
  }
 
+ /*
+ This is the styling for the tab class
+ */
  .tab {
    margin-left: calc(37%);
    }
 
+/*This is the styling for the tab buttons*/
 .tab button {
     background-color: white;
     float: left;
@@ -167,6 +173,7 @@ This is the styling for the me class
     border-top: none;
 }
 
+/*This is the styling for the skill class*/
 .skill {
   padding-top: 100px;
   /* border-top: solid #044C62; */
@@ -179,15 +186,11 @@ This is the styling for the me class
   border: solid #044C62;
 }
 
-.ddt {
+/*.ddt {
   background-color: blue;
-}
+}*/
 
-
-
-
-
-
+/*Sets the styling for the background of the projects*/
 .projectBackground {
   height: 300px;
   width: 250px;
@@ -199,17 +202,19 @@ This is the styling for the me class
   color: white;
   text-align: center;
 }
-
+/*Sets the styling for the background of the projects on hover*/
 .projectBackground:hover {
   transform: scale(1.1);
   box-shadow: 10px 10px 5px grey;
 }
 
+/*Adds padding to the projects*/
 .projects {
   padding-top: 40px;
   padding-bottom: 70px;
 }
 
+/*Sets the styling for the project*/
 .project {
   margin-top:30px;
   text-align: center;
@@ -225,29 +230,33 @@ This is the styling for the me class
   margin-right: auto;
 }
 
+/*Sets the styling for the project name in the projects*/
 .projectName {
   margin-left: 30px;
 }
 
+/*Sets the styling for the project links to have no text-decoration*/
 .projectlink {
 text-decoration: none;
 }
 
+/*Sets the position for the Spin The Moose project image*/
 .moose {
   margin-left: 35px;
   margin-top: 40px;
 }
-
+/*Sets the position for the rubyside project image*/
 .rubyside{
 margin-top: 40px;
 background-color: white;
 }
-
+/*Sets the position for the framework project image*/
 .framework{
 margin-top: 40px;
 transition: all .5s ease-in-out;
 }
 
+/*Sets the styling for the moose class*/
 .moose {
   height:180px;
   width:180px;
@@ -255,17 +264,19 @@ transition: all .5s ease-in-out;
    transition: width 0.5s, height 0.5s;
 }
 
-
+/*Sets the styling for the framework class*/
 .framework {
   max-width: 200px;
   padding-left: 20px;
 }
 
+/*Sets the styling for the title class*/
 .title {
   text-align: center;
   color: #044C62;
 }
 
+/*Sets the styling for the process class*/
 .process {
   margin-top: 50px;
   max-width: 800px;
@@ -275,43 +286,47 @@ transition: all .5s ease-in-out;
   line-height: 1.5;
 }
 
+/*Sets the colour of the project link text*/
 .projectLink {
   color: #044C62;
 }
 
+/*Sets the styling of the problem section*/
 .problem {
   margin-bottom: 30px;
 }
+/*Sets the styling of the problem section p tags*/
 
 .problem p {
   padding: 20px;
 }
-
+/*Sets the styling of the research section*/
 .research {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*Sets the styling of the research section p tags*/
 .research p {
   padding: 20px;
 }
-
+/*Sets the styling of the design section*/
 .design {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*Sets the styling of the design section p tags*/
 .design p {
   padding: 20px;
 }
 
+/*Sets the styling for the mooseprototype class*/
 .mooseprototype {
   max-width: 400px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
-
+/*Sets the styling of the prototypes class*/
 .prototypes {
   max-width: 1000px;
   position: relative;
@@ -319,31 +334,30 @@ transition: all .5s ease-in-out;
   margin-right: auto;
   margin-bottom: 60px;
 }
-
+/*Sets the styling of the prototype class*/
 .prototype {
   max-height: 350px;
   margin-left: 10px;
 }
-
+/*Sets the styling of the build class*/
 .build {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*Sets the styling of the build section p tags*/
 .build p {
   padding: 20px;
 }
-
+/*Sets the styling of the test section*/
 .test {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*Sets the styling of the test section p tags*/
 .test p {
   padding: 20px;
 }
-
-
+/*Sets the styling of the contact section*/
 .contact {
   background-color: #0880A1;
   text-align: center;
@@ -356,15 +370,16 @@ transition: all .5s ease-in-out;
 
 }
 
+/*Sets the styling of the contact section links*/
 .contact a {
   color: white;
 }
-
+/*Sets the styling of the contact section links on hover*/
 .contact a:hover {
   color: #044C62;
   /* width: auto; */
 }
-
+/*Sets the styling of the footer section*/
 footer {
   position: absolute;
   bottom: -30;
@@ -372,6 +387,7 @@ footer {
   width:100%;
 }
 
+/*Sets the styling of the social class*/
 .social {
   height:70px;
   background-color: #0880A1;
@@ -382,12 +398,12 @@ footer {
   margin-right: auto;
 
 }
-
+/*Sets the styling of the social icons*/
 .socialIcon {
   max-height: 45px;
   /* margin-left: 15px; */
 }
-
+/*Sets the styling of the footer link*/
 footer a {
   padding-right:10px;
   padding-left:10px;
@@ -397,11 +413,13 @@ footer a {
   top:calc(30%);
 }
 
+/*Sets the styling of the twitter icon*/
 .twitter {
   height:35px;
   width:35px;
 }
 
+/*Sets the styling of the copyright section*/
 .copyright {
   width:100%;
   padding-top:5px;
