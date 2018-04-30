@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0; }
+  * html {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    line-height: 1.5; }
+    * html p {
+      text-align: center; }
+    * html .wrapper header {
+      background-color: #FAE7E9;
+      color: white;
+      height: 150px; }
+      * html .wrapper header .parent {
+        display: flex;
+        align-items: center;
+        width: 100%; }
+        * html .wrapper header .parent .logo {
+          display: block;
+          width: 300px;
+          padding-top: 30px; }
+      * html .wrapper header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: #D1142F; */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -17px; }
+        * html .wrapper header ul li {
+          float: right; }
+        * html .wrapper header ul li a {
+          display: block;
+          font-weight: bold;
+          color: #D1142F;
+          text-align: center;
+          padding: 10px 14px;
+          text-decoration: none;
+          border: solid transparent;
+          font-size: 18px; }
+        * html .wrapper header ul li a:hover {
+          border-style: solid;
+          border-color: #D1142F; }
+        * html .wrapper header ul header li {
+          list-style-type: none;
+          display: inline;
+          color: white; }
+      * html .wrapper header .parent {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-flow: row wrap; }
+        * html .wrapper header .parent .logo {
+          max-width: 300px; }
+      * html .wrapper header .parent {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto; }
+        @media (max-width: 640px) {
+          * html .wrapper header .parent .cell .small-hidden {
+            display: none; }
+            * html .wrapper header .parent .cell .small-hidden .topnav .icon {
+              display: none; } }
+    * html .wrapper .bounce {
+      float: right;
+      position: fixed;
+      display: block;
+      border: none;
+      color: white;
+      font-size: 20px;
+      padding: 10px 10px;
+      background-color: #D1142F;
+      cursor: pointer; }
+    * html .wrapper .parent {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap; }
+      * html .wrapper .parent .cell {
+        flex: 0 0 auto;
+        box-sizing: border-box; }
+        * html .wrapper .parent .cell .small-11 {
+          width: calc(91.6666% - 1rem); }
+          * html .wrapper .parent .cell .small-11 .title {
+            padding-top: 100px;
+            text-align: center;
+            color: #D1142F;
+            font-size: 28px;
+            padding-bottom: 10px; }
+    * html .wrapper .parent {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap; }
+      * html .wrapper .parent .cell {
+        flex: 0 0 auto;
+        box-sizing: border-box; }
+        * html .wrapper .parent .cell .small-11 {
+          width: calc(91.6666% - 1rem); }
+          * html .wrapper .parent .cell .small-11 .title {
+            padding-top: 100px;
+            text-align: center;
+            color: #D1142F;
+            font-size: 28px;
+            padding-bottom: 10px; }
+          * html .wrapper .parent .cell .small-11 .button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border: none;
+            color: white;
+            background-color: #D1142F;
+            padding: 15px 30px;
+            font-size: 20px;
+            radius: 5px;
+            cursor: pointer; }
+          * html .wrapper .parent .cell .small-11 .button:hover {
+            box-shadow: 0 10px 14px 0 darkgrey,0 10px 30px 0 darkgrey; }
+    * html .wrapper .parent {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap; }
+      * html .wrapper .parent .cell {
+        flex: 0 0 auto;
+        box-sizing: border-box; }
+        * html .wrapper .parent .cell .small-11 {
+          width: calc(91.6666% - 1rem); }
+          * html .wrapper .parent .cell .small-11 .title {
+            padding-top: 100px;
+            text-align: center;
+            color: #D1142F;
+            font-size: 28px;
+            padding-bottom: 10px; }
+    * html .wrapper .parent {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap; }
+      * html .wrapper .parent .organisers {
+        position: relative;
+        height: auto;
+        top: 30px;
+        transition-property: top;
+        transition-duration: 2s; }
+        * html .wrapper .parent .organisers .organisers img {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 50px; }
+        * html .wrapper .parent .organisers .test {
+          margin: auto;
+          width: 50%;
+          padding: 10px; }
+          * html .wrapper .parent .organisers .test .clip {
+            display: inline-block;
+            position: relative;
+            width: 180px;
+            height: 150px;
+            background-color: #D1142F;
+            box-sizing: border-box;
+            clip-path: polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%); }
+            * html .wrapper .parent .organisers .test .clip .clip:hover {
+              top: -5px; }
+            * html .wrapper .parent .organisers .test .clip .cell {
+              flex: 0 0 auto;
+              box-sizing: border-box; }
+              * html .wrapper .parent .organisers .test .clip .cell .small-12 {
+                width: calc(100% - 1rem); }
+                * html .wrapper .parent .organisers .test .clip .cell .small-12 .clip img {
+                  position: absolute;
+                  top: 5px;
+                  left: 10px;
+                  width: 116px;
+                  height: 117px;
+                  clip-path: polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%); }
+          * html .wrapper .parent .organisers .test .clip {
+            display: inline-block;
+            position: relative;
+            width: 180px;
+            height: 150px;
+            background-color: #D1142F;
+            box-sizing: border-box;
+            clip-path: polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%); }
+            * html .wrapper .parent .organisers .test .clip .cell {
+              flex: 0 0 auto;
+              box-sizing: border-box; }
+              * html .wrapper .parent .organisers .test .clip .cell .small-12 {
+                width: calc(100% - 1rem); }
+                * html .wrapper .parent .organisers .test .clip .cell .small-12 .clip img {
+                  position: absolute;
+                  top: 5px;
+                  left: 10px;
+                  width: 116px;
+                  height: 117px;
+                  clip-path: polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%); }
+          * html .wrapper .parent .organisers .test .clip {
+            display: inline-block;
+            position: relative;
+            width: 180px;
+            height: 150px;
+            background-color: #D1142F;
+            box-sizing: border-box;
+            clip-path: polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%); }
+            * html .wrapper .parent .organisers .test .clip .cell {
+              flex: 0 0 auto;
+              box-sizing: border-box; }
+              * html .wrapper .parent .organisers .test .clip .cell .small-12 {
+                width: calc(100% - 1rem); }
+                * html .wrapper .parent .organisers .test .clip .cell .small-12 .clip img {
+                  position: absolute;
+                  top: 5px;
+                  left: 10px;
+                  width: 116px;
+                  height: 117px;
+                  clip-path: polygon(83% 12%, 100% 40%, 67% 93%, 33% 40%, 50% 12%); }
+    * html .wrapper .push {
+      height: 50px; }
+    * html .wrapper footer {
+      margin: 0;
+      padding: 0;
+      background-color: #D1142F;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      * html .wrapper footer .cleversteam {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80px; }
+      * html .wrapper footer footer a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: solid transparent; }
+      * html .wrapper footer .parent {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap; }
+        * html .wrapper footer .parent .cell {
+          flex: 0 0 auto;
+          box-sizing: border-box; }
+          * html .wrapper footer .parent .cell .small-6 {
+            width: calc(50% - 1rem); }
+            * html .wrapper footer .parent .cell .small-6 .icons {
+              display: inline;
+              margin-left: auto;
+              margin-right: auto; }
+              * html .wrapper footer .parent .cell .small-6 .icons .slack {
+                height: 70px;
+                width: 70px;
+                float: right; }
+          * html .wrapper footer .parent .cell .cell {
+            flex: 0 0 auto;
+            box-sizing: border-box; }
+            * html .wrapper footer .parent .cell .cell .small-6 {
+              width: calc(50% - 1rem); }
+              * html .wrapper footer .parent .cell .cell .small-6 .twitter {
+                height: 35px;
+                width: 35px;
+                float: left; }
