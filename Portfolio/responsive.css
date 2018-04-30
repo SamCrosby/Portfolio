@@ -6,16 +6,24 @@ Sets the parent div as flex, while passes this on to its children
     align-items: center;
 }
 
+/*
+This sets flex for the diirect descendants of the parent class.
+*/
 .parent > div {
         flex: 1;
     }
 
-
+    /*
+    This is the styling for the grid-container class
+    */
 .grid-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/*
+This is the class for the individual cells
+*/
 .cell {
     flex: 0 0 auto;
     box-sizing: border-box;

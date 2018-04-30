@@ -2,138 +2,144 @@
 <html>
 <head>
   <title>Samantha Crosby</title>
+  <!--This is the link to the styleshseet-->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--This is the link to the responsive styleshseet-->
   <link rel="stylesheet" type="text/css" href="responsive.css">
-
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <!--This is the link to the portfolio JaavScript file-->
   <script src="portfolio.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 </head>
 <body>
-
+<!--This is the header for the site-->
 <header class="sticky" id="header">
   <div>
     <ul>
+      <!--These are the navigation links-->
       <li><a href="index.html" id="aboutlink" class="about">Home</a></li>
       <li><a href="index.html#skills" class="link">Skills</a></li>
       <li><a href="index.html#projects" class="link">Projects</a></li>
       <li><a href="#contact" class="link">Contact</a></li>
     </ul>
   </div>
-
 </header>
+<!--This is the button that sends the user back to the top of the page-->
+  <button class="bounce" onclick="window.location.href='#'" id="top">&Hat;</button>
+  <!--This is the framework title-->
+  <h1 class="title" style="margin-top:50px;">Accessibility Framework</h1>
+  <!--This is the link to the frameworks page-->
+  <p style="margin-top:20px;text-align:center;">The Accessibility Framework can be found <a class="projectLink" href="https://gifted-sammet-4ea55f.netlify.com/">here</a>.</p>
 
-<button class="bounce" onclick="window.location.href='#'" id="top">&Hat;</button>
+  <div class="process">
+    <!--This is the problem section-->
+    <div class="problem">
+      <!--This is the problem title-->
+      <h2 class="title">The Problem</h2>
+      <!--This is the problem text-->
+      <p>There are over 11 million people in the UK with a disability,
+         however accessibility within web is not widely implemented.
+         The aim of this project was to develop a HTML, CSS and JS framework
+         that fully integrates current accessibility standards. This Framework
+         would be run on a web page, where it would then produce error boxes
+         with error messages for each of the accessibility issues on the page.</p>
+    </div>
 
-<h1 class="title" style="margin-top:50px;">Accessibility Framework</h1>
+    <hr>
+    <!--This is the research section-->
+    <div class="research">
+      <!--This is the research title-->
+      <h2 class="title">Research</h2>
+      <!--This is the research text-->
+      <p>To research and investigate web accessibility, a literature review was
+         conducted to find out what standards and tools are out there for helping
+         developers make their sites accessible. This literature review also looked
+         into why accessibility on sites is not widely considered and what could be
+         the causes of this.This literature review found that while there are a
+         number of tools and guidelines out there to help developers make their
+         websites accessible, they are not being used. To find out whether websites
+         are adhering to current accessibility standards and complete objective two,
+         desk research was done on 10 beauty websites. The desk research found that
+         accessibility standards were not being adhered to.</p>
+    </div>
 
-<p style="margin-top:20px;text-align:center;">The Accessibility Framework can be found <a class="projectLink" href="https://gifted-sammet-4ea55f.netlify.com/">here</a>.</p>
+    <hr>
+    <!--This is the design section-->
+    <div class="design">
+      <!--This is the design title-->
+      <h2 class="title">Design</h2>
+      <!--This is the design text-->
+      <p>Low-fidelity prototypes were used to create quick, rough
+        sketches of different designs. High-fidelity prototypes
+        were used to create the final look of the website. The button
+        containing the framework and the error boxes produced were designed
+        to be red because this framework is checking for errors and errors
+        are usually represented by the colour red.</p>
+    </div>
+    <!--These are the prototype images-->
+    <div class="prototypes">
+      <img class="prototype" src="images/lowframework.png" alt="Low-fidelity prototype"></img>
+      <img class="prototype" src="images/framework.png" alt="High-fidelity prototype"></img>
+    </div>
 
-<div class="process">
-<div class="problem">
-  <h2 class="title">The Problem</h2>
-  <p>There are over 11 million people in the UK with a disability,
-     however accessibility within web is not widely implemented.
-     The aim of this project was to develop a HTML, CSS and JS framework
-     that fully integrates current accessibility standards. This Framework
-     would be run on a web page, where it would then produce error boxes
-     with error messages for each of the accessibility issues on the page.</p>
-</div>
+    <hr>
+    <!--This is the build section-->
+    <div class="build">
+      <!--This is the build title-->
+      <h2 class="title">Build</h2>
+      <!--This is the build text-->
+      <p>The framework was created using HTML, CSS, JavaScript and JQuery.
+      The button containing the framework can either be dragged into the bookmarks
+      (if using Google Chrome) or saved as a bookmark. When the bookmark is run
+      on a web page, the framework checks for accessibility issues and produces
+      error boxes with error messages for each of the issues.</p>
+    </div>
 
-<hr>
-
-<div class="research">
-  <h2 class="title">Research</h2>
-  <p>To research and investigate web accessibility, a literature review was
-     conducted to find out what standards and tools are out there for helping
-     developers make their sites accessible. This literature review also looked
-     into why accessibility on sites is not widely considered and what could be
-     the causes of this.This literature review found that while there are a
-     number of tools and guidelines out there to help developers make their
-     websites accessible, they are not being used. To find out whether websites
-     are adhering to current accessibility standards and complete objective two,
-     desk research was done on 10 beauty websites. The desk research found that
-     accessibility standards were not being adhered to.</p>
-</div>
-
-<hr>
-
-<div class="design">
-  <h2 class="title">Design</h2>
-  <p>Low-fidelity prototypes were used to create quick, rough
-    sketches of different designs. High-fidelity prototypes
-    were used to create the final look of the website. The button
-    containing the framework and the error boxes produced were designed
-    to be red because this framework is checking for errors and errors
-    are usually represented by the colour red.</p>
-</div>
-
-<div class="prototypes">
-  <img class="prototype" src="images/lowframework.png" alt="Low-fidelity prototype"></img>
-  <img class="prototype" src="images/framework.png" alt="High-fidelity prototype"></img>
-</div>
-
-<hr>
-
-<div class="build">
-  <h2 class="title">Build</h2>
-  <p>The framework was created using HTML, CSS, JavaScript and JQuery.
-  The button containing the framework can either be dragged into the bookmarks
-  (if using Google Chrome) or saved as a bookmark. When the bookmark is run
-  on a web page, the framework checks for accessibility issues and produces
-  error boxes with error messages for each of the issues.</p>
-</div>
-
-<hr>
-
-<div class="test">
-  <h2 class="title">Test</h2>
-  <p>This build was tested using manual testing, which involved
-     creating a test plan containing a number of test cases. When
-     this test was conducted, the result was written up, along
-     with whether or not the build passed this test.</p>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="contact" id="contact">
-<p>SamanthaCrosby97@Outlook.com</p>
-<p>07596428322</p>
-<p>Based in St. Helens</p>
-<a href="https://stupefied-meitner-cb15ff.netlify.com/SamanthaCrosbyCV.docx"><p>Download CV</p></a>
-
-</div>
-
-<footer>
-  <div class="social">
-    <a href="https://www.linkedin.com/in/samantha-crosby-974496112/">
-      <img src="images/linkedin2.png"></img>
-  </a>
-    <a href="https://github.com/SamCrosby">
-      <img src="images/github.png"></img>
-  </a>
-  <a href="#">
-    <img src="images/Twitter3.svg" class="twitter"></img>
-  </a>
+    <hr>
+    <!--This is the test section-->
+    <div class="test">
+      <!--This is the test title-->
+      <h2 class="title">Test</h2>
+      <!--This is the test text-->
+      <p>This build was tested using manual testing, which involved
+         creating a test plan containing a number of test cases. When
+         this test was conducted, the result was written up, along
+         with whether or not the build passed this test.</p>
+    </div>
   </div>
 
+  <!--This is the contact section-->
+  <div class="contact" id="contact">
+    <!--This is the email address-->
+    <p>SamanthaCrosby97@Outlook.com</p>
+    <!--This is the phone number-->
+    <p>07596428322</p>
+    <!--This is the location-->
+    <p>Based in St. Helens</p>
+    <!--This is the link to download the CV-->
+    <a href="https://stupefied-meitner-cb15ff.netlify.com/SamanthaCrosbyCV.docx"><p>Download CV</p></a>
+  </div>
+
+<!--This is the footer section-->
+<footer>
+  <!--This is the social media section-->
+  <div class="social">
+    <!--This is the link to linkedin-->
+    <a href="https://www.linkedin.com/in/samantha-crosby-974496112/">
+      <img src="images/linkedin2.png"></img>
+    </a>
+    <!--This is the link to github-->
+    <a href="https://github.com/SamCrosby">
+      <img src="images/github.png"></img>
+    </a>
+    <!--This is the link to twitter-->
+    <a href="#">
+      <img src="images/Twitter3.svg" class="twitter"></img>
+    </a>
+  </div>
+  <!--This is the copyright-->
   <div class="copyright">
     <p>&copy;Samantha Crosby 2018</p>
   </div>
 </footer>
-
 </body>
 </html>
