@@ -1,0 +1,229 @@
+ //this is the styling for the html, it sets the font for everything as 'proxima-nova', sans-serif;
+html {
+  font-family: 'proxima-nova', sans-serif;
+
+//This sets the style for the stall class
+.stall {
+  width: 100%;
+  height: 500px;
+  background-image: url("Images/stall.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+//This sets thes style of the parent class
+  .parent {
+    display: flex;
+    align-items: center;
+    width:100%;
+  }
+
+//This is the grid container that sets the width of the div to 1200px
+  .grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  //This wraps the elements next to each other when the screen shrinks to mobile
+  .grid-x {
+    display: flex;
+    flex-flow: row wrap;
+    //This is the styling for the cell class
+      .cell {
+        margin: 0 0.5rem;
+      }
+      .small-6{
+        //This is the styling for the h1 tags in these containers
+        h1{
+          text-align: center;
+          color:white;
+          font-size: 2vw;
+          padding-bottom:10px;
+        }
+      }
+      //This is the styling for the cell class
+        .cell {
+          margin: 0 0.5rem;
+        }
+        .small-6{
+          //This is the styling for the h2 tags in these containers
+          h2{
+            text-align: right;
+             color: white;
+             font-size: 1.5vw;
+          }
+        }
+
+  }
+  //This is the styling for the button class
+  .button{
+    float: left;
+    position: relative;
+    left: calc(50% - 290px);
+    top: calc(25%);
+    //This is the styling for the buttons
+    button {
+      position: absolute;
+      left: calc(50% - 115px);
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #ffffff;
+      background-color:#0066ff;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #999;
+    }
+    //This is the styling for the buttons on hover
+    button:hover {
+      background-color: #0047b3;
+    }
+    //This is the styling for the buttons when they are active
+    button:active {
+      background-color: #0047b3;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  }
+//This is the class attached to the spinner board and defines the styling for it
+  .spinner{
+    height: 280px;
+    position: absolute;
+    left: calc(38% );
+    margin-top: calc(7%);
+  }
+  //This is the class attached to the moose head and defines the styling for it
+  .moose{
+    max-height:130px;
+    max-width:150px;
+    position: absolute;
+    margin-top: calc(11%);
+    left: calc(44% );
+  }
+  //This is the class attached to the speech bubble text and defines the position for it
+.speech{
+  position: fixed;
+  right: calc(26%);
+  top: calc(37%);
+
+  //This is the class attached to the triangle which is part of the speech bubble and defines the styling for it
+  .triangle {
+    fill: #F4A6BC;
+    left: 50px;
+  }
+  //This is the class attached to the circle which is part of the speech bubble and defines the styling for it
+  .circle {
+    fill: #F4A6BC;
+    float: right;
+  }
+  }
+
+//This is the class attached to the speech bubble and defines the position for it
+.bubble {
+  position:relative;
+  left:calc(74%);
+  top:calc(38%);
+  display:none;
+  //This is the class for the prize text which centers it
+    .prizes {
+      text-align:center;
+    }
+}
+
+//This is the styling for the modal box
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+//This is the styling for the model content
+  .modal-content {
+    background-color: #FCEB60;
+    font-family: 'proxima-nova', sans-serif;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+    //These are the animations that allow the moose head to spin
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+//This is the styling for the class in the span tag which closes the modal box
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold
+    }
+    //This is the styling for the close span on hover
+    .close:hover {
+      //This is the styling for the close span when it is clicked
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    //This is the styling for the instructions on the form
+    .formInstructions {
+      font-size:20px;
+      text-align:center;
+    }
+    //This is the styling for the text in the form
+    .modaltext {
+      font-size: 16px;
+      margin-left: 37%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    //This is the styling for the button with the submit class
+    .submit {
+      position: relative;
+      left: calc(50% - 50px);
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #ffffff;
+      background-color:#0066ff;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #999;
+    }
+    //This is the styling for the submit button when it is hovered over.
+    .submit:hover {
+      background-color: #0047b3;
+    }
+    //This is the styling for the submit button when it is active
+    .submit:active {
+      background-color: #0047b3;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  }
+}
+
+
+
+}

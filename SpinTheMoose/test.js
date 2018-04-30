@@ -1,5 +1,6 @@
+//Prize variable holds the prize the user currently has
 var prize = "";
-var winner = "";
+// var winner = "";
 
 function popup() {
   if(prize == "") {
@@ -22,6 +23,7 @@ function popup() {
   }
 }
 
+//this is the speech bubble function that turns the speechbubble visible if it is not already, otherwise it hides it again.
 function speechBubble() {
   var speech = document.getElementById("speech");
       if (speech.style.display === "none") {
@@ -33,13 +35,19 @@ function speechBubble() {
 
     // var angle = Math.floor(Math.random() * 361);
 
+
+    //This is the spin function
     function spin() {
+      //It retrieves the modal by its id
         var modal = document.getElementById('modal');
+        //sets the style of the modal to 'none' so that it dissappears.
         modal.style.display = "none";
 
-
+        //produces a random number up to 49.
         var weight = Math.floor(Math.random() * 49);
 
+        //these are the weightings for the prizes
+        //The all expenses paid trip prize is won when the random number is equal to 48. This is beause
         if(weight == 48) {
           prize = "An all expenses paid trip!";
           document.getElementById("moose").style.transform = "rotate(742deg)";
@@ -81,7 +89,7 @@ function speechBubble() {
           document.getElementById("moose").style.WebkitTransitionDuration="2s";
           // window.alert("You have won prize 3!");
         }
-        var winner = "won";
+        // var winner = "won";
         var speech = document.getElementById("speech");
         var bubble = document.getElementById("bubble");
 
@@ -93,7 +101,7 @@ function speechBubble() {
                  // bubble.style.display = "block";
              }
         }
-
+        //This inserts the string of the prize variable onto the speech bubble that tells the user what they have won.
         document.getElementById("prizes").innerHTML = prize;
 
 
