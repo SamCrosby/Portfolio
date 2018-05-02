@@ -1,7 +1,6 @@
 //This adds margin and padding 0 to everything to prevent gaps between the elements and the sides of the page
-* {
-  margin: 0;
-  padding: 0;
+// * {
+
   //This is the styling added to all of the html
 html{
   font-family: sans-serif;
@@ -10,6 +9,7 @@ html{
   padding: 0;
   background-color:white;
   line-height: 1.5;
+
   //This is the styling added to all of the p tags
   p {
     text-align: center;
@@ -30,8 +30,11 @@ html{
         width:300px;
         padding-top: 30px;
       }
-    }
+
     //This is the styling for the ul tags
+    .parent{
+      .cell{
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -109,6 +112,8 @@ html{
   }
 }
 }
+}}
+}
 //This is the styling for the bounce back to the top of the page button
 .bounce {
   float:right;
@@ -129,6 +134,7 @@ html{
   flex-flow: row wrap;
   //This is the styling for the cell class
     .cell {
+
       flex: 0 0 auto;
       box-sizing: border-box;
       //This sets the width of the element to be the width of the screen on small
@@ -399,4 +405,4 @@ footer {
 }
 }
 }
-}
+// }
