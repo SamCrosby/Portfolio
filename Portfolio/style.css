@@ -25,12 +25,22 @@ header {
   text-align: center;
   background-color: #044C62;
   color: white;
-  padding:15px;
+  padding-top:15px;
+  padding-bottom:15px;
   height: 50px;
   margin:0;
+  width:100%;
   /* transition: top 0.2s ease-in-out; */
 }
 
+.navigation {
+  padding-top:17px;
+}
+
+/*.skill ul li:hover {
+  background-color: #044C62;
+  color: white;
+}*/
 
 /*
 This is the styling for the header links.
@@ -128,42 +138,85 @@ This is the styling for the skills class
  */
  .skill ul {
    list-style-type: none;
-   columns: 2;
+   /*columns: 2;
    -webkit-columns: 2;
-   -moz-columns: 2;
+   -moz-columns: 2;*/
  }
+
+ li.left {
+    float: left;
+    display: block;
+    padding-left: 150px;
+}
+li.right {
+    float: right;
+    padding-right: 200px;
+
+}
+
+
+span{
+    width: 50%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+@media only screen and (max-width: 480px) {
+    .left, .right {
+        float: none;
+        width: 100%;
+        display:blocK;
+    }
+}
 
  /*
  This is the styling for the tab class
  */
  .tab {
-   margin-left: calc(37%);
+   /*margin-left: calc(37%);*/
+   /*position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   width: 30%;*/
+   /*display: inline-block;*/
+   width: 356px;
+   max-width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   /*padding-left: 300px;
+   padding-right: 200px;*/
+
    }
+
 
 /*This is the styling for the tab buttons*/
 .tab button {
-    background-color: white;
+    background-color: #044C62;
+    color: white;
     float: left;
-    border-top: transparent;
+    /*border-top: transparent;
     border-left: transparent;
-    border-right: transparent;
-    border-bottom: solid #044C62;
+    border-right: transparent;*/
+    border: solid #044C62;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #044C62;
+  background-color: #0880A1;
    color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #044C62;
+    background-color:#0880A1;
     color: white;
 }
 
@@ -171,6 +224,7 @@ This is the styling for the skills class
 .tabcontent {
     display: none;
     border-top: none;
+    width: 100%;
 }
 
 /*This is the styling for the skill class*/
@@ -179,11 +233,22 @@ This is the styling for the skills class
   /* border-top: solid #044C62; */
   line-height: 1.5;
   height:200px;
-  max-width:700px;
+  width:700px;
+  max-width: 100%;
   margin-left:auto;
   margin-right:auto;
   font-size: 18px;
   border: solid #044C62;
+}
+
+@media only screen and (max-width: 480px) {
+    .skill {
+        padding-top: 30px;
+        width: 92%;
+        float: left;
+        height: 320px;
+        margin-bottom: 50px;
+    }
 }
 
 /*.ddt {
@@ -210,7 +275,7 @@ This is the styling for the skills class
 
 /*Adds padding to the projects*/
 .projects {
-  padding-top: 40px;
+  padding-top: 100px;
   padding-bottom: 70px;
 }
 
@@ -321,7 +386,7 @@ transition: all .5s ease-in-out;
 
 /*Sets the styling for the mooseprototype class*/
 .mooseprototype {
-  max-width: 400px;
+  max-width: 350px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -338,6 +403,8 @@ transition: all .5s ease-in-out;
 .prototype {
   max-height: 350px;
   margin-left: 10px;
+  max-width: 80%;
+  /*padding-left: 30px;*/
 }
 /*Sets the styling of the build class*/
 .build {
@@ -415,8 +482,13 @@ footer a {
 
 /*Sets the styling of the twitter icon*/
 .twitter {
-  height:35px;
-  width:35px;
+  height:40px;
+  width:40px;
+}
+
+.git {
+  height:40px;
+  width:40px;
 }
 
 /*Sets the styling of the copyright section*/

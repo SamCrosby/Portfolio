@@ -13,7 +13,8 @@
 <body>
 <!--This is the header for the site-->
 <header class="sticky" id="header">
-  <div>
+  <div class="small-12">
+  <div class="navigation">
     <ul>
       <!--These are the navigation links-->
       <li><a href="#" id="aboutlink" class="about">Home</a></li>
@@ -22,6 +23,7 @@
       <li><a href="#contact" class="link">Contact</a></li>
     </ul>
   </div>
+</div>
 </header>
 <!--This is the button that sends the user back to the top of the page-->
   <button class="bounce" onclick="window.location.href='#'" id="top">&Hat;</button>
@@ -38,39 +40,34 @@
   <div class="tab">
     <div class="cell small-12">
       <!--These are the individual tabs-->
-      <button class="tablinks" onclick="openSkill(event, 'design')" style="border-right:solid #044C62;">Design<br> Skills</button>
-      <button class="tablinks" onclick="openSkill(event, 'development')" style="border-right:solid #044C62;">Development<br> Skills</button>
+      <button class="tablinks" onclick="openSkill(event, 'design')">Design<br> Skills</button>
+      <button class="tablinks" onclick="openSkill(event, 'development')">Development<br> Skills</button>
       <button class="tablinks" onclick="openSkill(event, 'testing')">Testing<br> Skills</button>
     </div>
   </div>
   <!--This is the content for the design skills tab-->
   <div id="design" class="skill">
     <ul>
-      <li>User Experience Design</li>
-      <li>Responsive Design</li>
+      <li><span class="left">User Experience Design</span><span class="right">Responsive Design</span></li>
     </ul>
   </div>
   <!--This is the content for the development skills tab-->
   <div id="development" class="skill" style="display:none;">
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>SASS</li>
-      <li>PHP</li>
-      <li>MySQL</li>
-      <li>Ember.js</li>
-      <li>Python</li>
-      <li>Laravel</li>
-      <li>Linux</li>
+      <li><span class="left">HTML5</span><span class="right">CSS3</span></li>
+      <li><span class="left">JavaScript</span><span class="right">jQuery</span></li>
+      <li><span class="left">SASS</span></li>
+      <li><span class="left">PHP</span><span class="right">MySQL</span></li>
+      <li><span class="left">Ember.js</span><span class="right">Python</span></li>
+      <li><span class="left">Laravel</span><span class="right">Linux</span></li>
     </ul>
   </div>
   <!--This is the content for the design skills tab-->
   <div id="testing" class="skill" style="display:none;">
     <ul>
-      <li>Test-Driven Development</li>
-      <li>Behaviour-Driven Development</li>
+      <li><span class="left">Test-Driven Development</span><span class="right">Behaviour-Driven Development</span></li>
+      <li><span class="left">Manual Testing</span><span class="right">Usability Testing</span></li>
+      <li><span class="left">Performance Testing</span></li>
     </ul>
   </div>
 </div>
@@ -80,14 +77,14 @@
   <!--This is the projects title-->
   <h2 style="text-align:center;color:#044C62;">Projects</h2>
   <!--This is the container grid for the projects-->
-  <div class="parent left grid-container grid-x" style="max-width:850px;margin-left:auto;margin-right:auto;">
+  <div class="parent grid-container grid-x" style="max-width:850px;margin-left:auto;margin-right:auto;">
     <!--This is the link to the Spin the moose page-->
     <a href="SpinTheMoose.html" class="projectlink">
       <div class="projectBackground">
         <div class="cell small-11">
           <div class="project">
             <!--This is the projects images-->
-            <img class="moose" src="Images/moose2.PNG"></img>
+            <img class="moose" src="images/moose2.PNG"></img>
           </div>
           <!--This is the name of the project-->
           <h3 class="projectName">Spin The Moose</h3>
@@ -101,7 +98,7 @@
         <div class="cell small-11">
             <div class="project">
               <!--This is the project image-->
-              <img class="rubyside" src="Images/rubyside.svg" style="max-width:230px;margin-left:10px;"></img>
+              <img class="rubyside" src="images/rubyside.svg" style="max-width:230px;margin-left:10px;"></img>
             </div>
             <!--This is the project title-->
             <h3 class="projectName" style="margin-top:90px;">Rubyside</h3>
@@ -115,7 +112,7 @@
         <div class="cell small-11">
           <div class="project">
             <!--This is the project image-->
-            <img class="framework" src="Images/favicon.png"></img>
+            <img class="framework" src="images/favicon.png"></img>
           </div>
           <!--This is the project title-->
           <h3 class="projectName" style="margin-top:10px;">Accessibility<br>Framework</h3>
@@ -143,11 +140,11 @@
   <div class="social">
     <!--This is the link to linkedin-->
     <a href="https://www.linkedin.com/in/samantha-crosby-974496112/">
-      <img src="images/linkedin2.png"></img>
+      <img src="images/linkedin2.png" class="linkedin" ></img>
     </a>
     <!--This is the link to github-->
     <a href="https://github.com/SamCrosby">
-      <img src="images/github.png"></img>
+      <img src="images/github.png" class="git"></img>
     </a>
     <!--This is the link to twitter-->
     <a href="#">
