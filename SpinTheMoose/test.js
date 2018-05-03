@@ -26,11 +26,23 @@ function popup() {
 //this is the speech bubble function that turns the speechbubble visible if it is not already, otherwise it hides it again.
 function speechBubble() {
   var speech = document.getElementById("speech");
+  var bubble = document.getElementById("bubble");
+
       if (speech.style.display === "none") {
           speech.style.display = "block";
+
       } else {
           speech.style.display = "none";
       }
+      if (bubble.style.display === "none") {
+           bubble.style.display = "block";
+           // bubble.style.display = "block";
+       } else {
+         bubble.style.display = "none";
+       }
+
+       document.getElementById("prizes").innerHTML = prize;
+
   }
 
     // var angle = Math.floor(Math.random() * 361);

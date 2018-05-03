@@ -28,7 +28,7 @@
   </div>
   <!--This is the button the user presses to produce the pop-up form-->
   <div class="button">
-    <button id="spin" onClick="popup();" type="button">Click to spin the moose!</button>
+    <button id="spin" onClick="popup();" type="button">Click to <br>spin the moose!</button>
   </div>
 
     <!--The board that displays the prizes-->
@@ -44,7 +44,7 @@
     </svg>
    </div>
    <!--This is the congratulatory text that appears to announce the prize the user has won-->
-   <div id="bubble" class="bubble">
+   <div id="bubble" class="bubble" hidden>
      <p>Congratulations!</p>
      <p>You have won </p>
      <p id="prizes" class="prizes"></p>
@@ -56,7 +56,7 @@
         <span class="close">&times;</span>
           <!--Form inside the modal box that the user fills in their details, before they
           can spin the moose. When the form is submitted, the spin function is then ran.-->
-          <form action="#" id="contact" data-parsley-validate="" onsubmit="spin()">
+          <form action="#" id="contact" onsubmit="spin()">
             <p class="formInstructions">Please enter your details to spin the moose and win a prize!</p>
             <!--The fields the user has to fill in (Full name, phone number and email address).-->
             <div class="modaltext">

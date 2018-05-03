@@ -9,31 +9,31 @@ html {
     html .stall .parent {
       display: flex;
       align-items: center;
-      width: 100%; }
-    html .stall .grid-container {
+      width: 100%;
       max-width: 1200px;
-      margin: 0 auto; }
-    html .stall .grid-x {
+      margin: 0 auto;
       display: flex;
       flex-flow: row wrap; }
-      html .stall .grid-x .cell {
+      html .stall .parent .cell {
         margin: 0 0.5rem; }
-      html .stall .grid-x .small-6 h1 {
+      html .stall .parent .small-6 h1 {
         text-align: center;
         color: white;
         font-size: 2vw;
-        padding-bottom: 10px; }
-      html .stall .grid-x .cell {
+        padding-bottom: 10px;
+        float: right; }
+      html .stall .parent .cell {
         margin: 0 0.5rem; }
-      html .stall .grid-x .small-6 h2 {
+      html .stall .parent .small-6 h2 {
         text-align: right;
         color: white;
-        font-size: 1.5vw; }
+        font-size: 1.5vw;
+        padding-left: 500px; }
     html .stall .button {
       float: left;
       position: relative;
-      left: calc(50% - 290px);
-      top: calc(25%); }
+      top: calc(25%);
+      padding-left: 850px; }
       html .stall .button button {
         position: absolute;
         left: calc(50% - 115px);
@@ -49,6 +49,14 @@ html {
         border: none;
         border-radius: 10px;
         box-shadow: 0 9px #999; }
+      @media (max-width: 640px) {
+        html .stall .button button {
+          height: 45px;
+          width: 60px;
+          font-size: 12px;
+          left: calc(10%);
+          margin-top: calc(-16%);
+          padding: 0; } }
       html .stall .button button:hover {
         background-color: #0047b3; }
       html .stall .button button:active {
@@ -58,18 +66,29 @@ html {
     html .stall .spinner {
       height: 280px;
       position: absolute;
-      left: calc(38%);
-      margin-top: calc(7%); }
+      left: calc(40%);
+      margin-top: calc(8%); }
+    @media (max-width: 640px) {
+      html .stall .spinner {
+        height: 75px;
+        left: calc(40%);
+        margin-top: calc(-3%); } }
     html .stall .moose {
       max-height: 130px;
       max-width: 150px;
       position: absolute;
-      margin-top: calc(11%);
-      left: calc(44%); }
+      margin-top: calc(13%);
+      left: calc(46%); }
+    @media (max-width: 640px) {
+      html .stall .moose {
+        height: 20px;
+        width: 40px;
+        left: calc(45%);
+        margin-top: calc(3%); } }
     html .stall .speech {
-      position: fixed;
-      right: calc(26%);
-      top: calc(37%); }
+      position: absolute;
+      right: calc(-3%);
+      top: calc(40%); }
       html .stall .speech .triangle {
         fill: #F4A6BC;
         left: 50px; }
@@ -78,11 +97,13 @@ html {
         float: right; }
     html .stall .bubble {
       position: relative;
-      left: calc(74%);
+      float: right;
+      left: calc(-11%);
       top: calc(38%);
-      display: none; }
+      padding-left: 25px; }
       html .stall .bubble .prizes {
-        text-align: center; }
+        display: block;
+        padding-left: 30px; }
     html .stall .modal {
       display: none;
       position: fixed;

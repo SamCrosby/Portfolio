@@ -1,3 +1,8 @@
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
  //this is the styling for the html, it sets the font for everything as 'proxima-nova', sans-serif;
 html {
   font-family: 'proxima-nova', sans-serif;
@@ -15,17 +20,18 @@ html {
     display: flex;
     align-items: center;
     width:100%;
-  }
-
-//This is the grid container that sets the width of the div to 1200px
-  .grid-container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  //This wraps the elements next to each other when the screen shrinks to mobile
-  .grid-x {
     display: flex;
     flex-flow: row wrap;
+
+//This is the grid container that sets the width of the div to 1200px
+  // .grid-container {
+  //
+  // }
+  //This wraps the elements next to each other when the screen shrinks to mobile
+  // .grid-x {
+
     //This is the styling for the cell class
       .cell {
         margin: 0 0.5rem;
@@ -37,6 +43,7 @@ html {
           color:white;
           font-size: 2vw;
           padding-bottom:10px;
+          float: right;
         }
       }
       //This is the styling for the cell class
@@ -49,6 +56,7 @@ html {
             text-align: right;
              color: white;
              font-size: 1.5vw;
+             padding-left: 500px;
           }
         }
 
@@ -57,8 +65,9 @@ html {
   .button{
     float: left;
     position: relative;
-    left: calc(50% - 290px);
+    // left: calc(50% - 290px);
     top: calc(25%);
+    padding-left: 850px;
     //This is the styling for the buttons
     button {
       position: absolute;
@@ -76,6 +85,17 @@ html {
       border-radius: 10px;
       box-shadow: 0 9px #999;
     }
+    @media(max-width: 640px) {
+      button {
+        // content:"Spin!";
+          height: 45px;
+          width: 60px;
+          font-size: 12px;
+          left: calc(10%);
+          margin-top: calc(-16%);
+          padding:0;
+      }
+    }
     //This is the styling for the buttons on hover
     button:hover {
       background-color: #0047b3;
@@ -91,22 +111,42 @@ html {
   .spinner{
     height: 280px;
     position: absolute;
-    left: calc(38% );
-    margin-top: calc(7%);
+    left: calc(40% );
+    margin-top: calc(8%);
   }
+
+  @media(max-width: 640px) {
+    .spinner {
+        height: 75px;
+        left: calc(40%);
+        margin-top: calc(-3%);
+    }
+}
+
   //This is the class attached to the moose head and defines the styling for it
   .moose{
     max-height:130px;
     max-width:150px;
     position: absolute;
-    margin-top: calc(11%);
-    left: calc(44% );
+    margin-top: calc(13%);
+    left: calc(46%);
   }
+
+  @media(max-width: 640px) {
+    .moose {
+        height: 20px;
+        width: 40px;
+        left: calc(45%);
+        margin-top: calc(3%);
+    }
+  }
+
   //This is the class attached to the speech bubble text and defines the position for it
 .speech{
-  position: fixed;
-  right: calc(26%);
-  top: calc(37%);
+  position: absolute;
+  right: calc(-3%);
+  top: calc(40%);
+
 
   //This is the class attached to the triangle which is part of the speech bubble and defines the styling for it
   .triangle {
@@ -123,12 +163,17 @@ html {
 //This is the class attached to the speech bubble and defines the position for it
 .bubble {
   position:relative;
-  left:calc(74%);
+  float: right;
+  left:calc(-11%);
   top:calc(38%);
-  display:none;
+  padding-left: 25px;
+  // width: 100%;
+  // display:none;
   //This is the class for the prize text which centers it
     .prizes {
-      text-align:center;
+      // text-align:center;
+      display: block;
+      padding-left: 30px;
     }
 }
 
